@@ -1,16 +1,17 @@
 ---
-doc_id: "quychedaotaodaihocuet67"
-title: "student"
+doc_id: "quy-che-dao-tao-dai-hoc-uet-67"
+title: "QuyCheDaoTaoDaiHocUET67"
 source_url: "https://uet.vnu.edu.vn/wp-content/uploads/2022/12/Quy-ch%E1%BA%BF-%C4%90T%C4%90H-3626.pdf"
 retrieved_at: "2026-08-03"
-document_version: "public-source"
-audience: "ctsv"
-department: "ctsv-policy"
-category: "vi"
-language: "not-stated"
+document_version: "not-stated"
+audience: "student"
+department: "ctsv"
+category: "ctsv-policy"
+language: "vi"
+institution: "uet"
 ---
 
-# student
+# QuyCheDaoTaoDaiHocUET67
 
 ## Page 1
 

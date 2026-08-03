@@ -1,16 +1,17 @@
 ---
-doc_id: "quychedaotaodaihocuet66"
-title: "student"
+doc_id: "quy-che-dao-tao-dai-hoc-uet-66"
+title: "QuyCheDaoTaoDaiHocUET66"
 source_url: "https://cdnportal.vnu.edu.vn/data/upload/vanban/2014/12/29/Final_QC-dH-_2014_Ban-hanh-25-12-2014.pdf"
 retrieved_at: "2026-08-03"
-document_version: "public-source"
-audience: "ctsv"
-department: "ctsv-policy"
-category: "vi"
-language: "not-stated"
+document_version: "not-stated"
+audience: "student"
+department: "ctsv"
+category: "ctsv-policy"
+language: "vi"
+institution: "uet"
 ---
 
-# student
+# QuyCheDaoTaoDaiHocUET66
 
 ## Page 1
 

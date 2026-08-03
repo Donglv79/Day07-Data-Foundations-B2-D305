@@ -1,16 +1,17 @@
 ---
-doc_id: "quychedaotaodaihochust"
-title: "student"
+doc_id: "quy-che-dao-tao-dai-hoc-hust"
+title: "QuyCheDaoTaoDaiHocHUST"
 source_url: "https://ctt.hust.edu.vn/Upload/Nguy%E1%BB%85n%20Qu%E1%BB%91c%20%C4%90%E1%BA%A1t/files/DTDH_QDQC/Hoctap/QCDT_2025_5445_QD-DHBK.pdf"
 retrieved_at: "2026-08-03"
-document_version: "public-source"
-audience: "ctsv"
-department: "ctsv-policy"
-category: "vi"
-language: "not-stated"
+document_version: "not-stated"
+audience: "student"
+department: "ctsv"
+category: "ctsv-policy"
+language: "vi"
+institution: "hust"
 ---
 
-# student
+# QuyCheDaoTaoDaiHocHUST
 
 ## Page 1
 

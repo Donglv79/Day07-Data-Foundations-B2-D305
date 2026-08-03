@@ -1,16 +1,17 @@
 ---
-doc_id: "dinhhuongnckh"
-title: "teacher"
+doc_id: "dinh-huong-nghien-cuu-khoa-hoc"
+title: "DinhHuongNCKH"
 source_url: "https://cdnportal.vnu.edu.vn/data/upload/2022/02/30316/Signed_Signed_286.pdf"
 retrieved_at: "2026-08-03"
-document_version: "public-source"
-audience: "nckh"
-department: "nckh-policy"
-category: "vi"
-language: "not-stated"
+document_version: "not-stated"
+audience: "teacher"
+department: "nckh"
+category: "nckh-policy"
+language: "vi"
+institution: "uet"
 ---
 
-# teacher
+# DinhHuongNCKH
 
 ## Page 1
 
