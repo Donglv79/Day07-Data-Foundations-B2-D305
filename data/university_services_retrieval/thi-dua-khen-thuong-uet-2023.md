@@ -1,14 +1,14 @@
 ---
-doc_id: "thi-dua-khen-thuong-uet-2023"
-title: "ThiDuaKhenThuongUET2023"
-source_url: "https://handbook.uet.vnu.edu.vn/Quy%20dinh%20khen%20thuong%20tai%20Truong%20DHCN%202023.pdf"
-retrieved_at: "2026-08-03"
-document_version: "not-stated"
-audience: "student"
-department: "ctsv"
-category: "scholarship-policy"
-language: "vi"
-institution: "uet"
+doc_id: thi-dua-khen-thuong-uet-2023
+title: ThiDuaKhenThuongUET2023
+source_url: https://handbook.uet.vnu.edu.vn/Quy%20dinh%20khen%20thuong%20tai%20Truong%20DHCN%202023.pdf
+retrieved_at: 2026-08-03
+document_version: not-stated
+audience: student
+department: ctsv
+category: scholarship-policy
+language: vi
+institution: uet
 ---
 
 # ThiDuaKhenThuongUET2023

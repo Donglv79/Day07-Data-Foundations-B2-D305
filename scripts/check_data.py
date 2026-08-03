@@ -2,7 +2,7 @@ import csv
 import re
 from pathlib import Path
 
-D = Path('data/university-academic-library-services')
+D = Path('data/university_services_retrieval')
 REQ = ['doc_id', 'title', 'source_url', 'retrieved_at', 'document_version']
 mds = sorted(D.glob('*.md'))
 rows = list(csv.DictReader(open(D / 'sources.csv', encoding='utf-8')))

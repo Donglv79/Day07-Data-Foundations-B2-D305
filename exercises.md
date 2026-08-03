@@ -36,17 +36,17 @@ Chạy `pytest tests/` để kiểm tra tiến độ.
 ### Danh sách cần làm (Checklist)
 - [x] `Document` dataclass — ĐÃ TRIỂN KHAI SẴN
 - [x] `FixedSizeChunker` — ĐÃ TRIỂN KHAI SẴN
-- [ ] `SentenceChunker` — tách dựa trên ranh giới câu, nhóm lại thành các chunks
-- [ ] `RecursiveChunker` — thử nghiệm các dấu phân cách (separators) theo thứ tự, thực hiện đệ quy trên các đoạn có kích thước quá lớn
-- [ ] `compute_similarity` — công thức tính độ tương tự cosine kèm cơ chế bảo vệ chia cho 0
-- [ ] `ChunkingStrategyComparator` — gọi cả ba chiến lược, tính toán các chỉ số thống kê
-- [ ] `EmbeddingStore.__init__` — khởi tạo store (lưu trữ trong bộ nhớ hoặc ChromaDB)
-- [ ] `EmbeddingStore.add_documents` — nhúng (embed) và lưu trữ từng tài liệu
-- [ ] `EmbeddingStore.search` — nhúng truy vấn, xếp hạng theo tích vô hướng (dot product)
-- [ ] `EmbeddingStore.get_collection_size` — trả về số lượng
-- [ ] `EmbeddingStore.search_with_filter` — lọc theo siêu dữ liệu (metadata), sau đó tìm kiếm
-- [ ] `EmbeddingStore.delete_document` — xóa tất cả các chunks của một doc_id
-- [ ] `KnowledgeBaseAgent.answer` — truy xuất (retrieve) + tạo prompt + gọi LLM
+- [x] `SentenceChunker` — tách dựa trên ranh giới câu, nhóm lại thành các chunks
+- [x] `RecursiveChunker` — thử nghiệm các dấu phân cách (separators) theo thứ tự, thực hiện đệ quy trên các đoạn có kích thước quá lớn
+- [x] `compute_similarity` — công thức tính độ tương tự cosine kèm cơ chế bảo vệ chia cho 0
+- [x] `ChunkingStrategyComparator` — gọi cả ba chiến lược, tính toán các chỉ số thống kê
+- [x] `EmbeddingStore.__init__` — khởi tạo store (lưu trữ trong bộ nhớ hoặc ChromaDB)
+- [x] `EmbeddingStore.add_documents` — nhúng (embed) và lưu trữ từng tài liệu
+- [x] `EmbeddingStore.search` — nhúng truy vấn, xếp hạng theo tích vô hướng (dot product)
+- [x] `EmbeddingStore.get_collection_size` — trả về số lượng
+- [x] `EmbeddingStore.search_with_filter` — lọc theo siêu dữ liệu (metadata), sau đó tìm kiếm
+- [x] `EmbeddingStore.delete_document` — xóa tất cả các chunks của một doc_id
+- [x] `KnowledgeBaseAgent.answer` — truy xuất (retrieve) + tạo prompt + gọi LLM
 
 > **Nộp code:** thư mục `src/`
 > **Ghi lại hướng tiếp cận vào:** REPORT_CANHAN.md — Phần 2 (Hướng tiếp cận của tôi)
@@ -81,11 +81,11 @@ Ghi vào bảng:
 
 | # | Tên tài liệu | Nguồn (Source URL) | Ngày lấy / Phiên bản | Số ký tự | Metadata đã gán |
 |---|--------------|------------|--------------------|----------|-----------------|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+| 1 | Định hướng nghiên cứu khoa học (UET) | https://cdnportal.vnu.edu.vn/data/upload/2022/02/30316/Signed_Signed_286.pdf | 2026-08-03 / not-stated | 14,249 | doc_id, title, source_url, retrieved_at, document_version, audience=teacher, institution=uet, department=nckh, category=nckh-policy, language=vi |
+| 2 | Quy chế đào tạo đại học HUST (QCDT 2025) | https://ctt.hust.edu.vn/Upload/Nguyễn%20Quốc%20Đạt/files/DTDH_QDQC/Hoctap/QCDT_2025_5445_QD-DHBK.pdf | 2026-08-03 / not-stated | 78,453 | doc_id, title, source_url, retrieved_at, document_version, audience=student, institution=hust, department=ctsv, category=ctsv-policy, language=vi |
+| 3 | Quy chế đào tạo đại học UET (QĐ 66) | https://cdnportal.vnu.edu.vn/data/upload/vanban/2014/12/29/Final_QC-dH-_2014_Ban-hanh-25-12-2014.pdf | 2026-08-03 / not-stated | 76,809 | doc_id, title, source_url, retrieved_at, document_version, audience=student, institution=uet, department=ctsv, category=ctsv-policy, language=vi |
+| 4 | Quy định chuẩn đầu ra ngoại ngữ (từ K70) | https://ctt.hust.edu.vn/Upload/Nguyễn%20Quốc%20Đạt/files/DTDH_QDQC/Hoctap/06_%20Quy%20định%20ngoại%20ngữ%20từ%20K70_chính%20quy_final.pdf | 2026-08-03 / not-stated | 29,358 | doc_id, title, source_url, retrieved_at, document_version, audience=student, institution=hust, department=ctsv, category=ctsv-policy, language=vi |
+| 5 | Quy định khen thưởng UET 2023 | https://handbook.uet.vnu.edu.vn/Quy%20dinh%20khen%20thuong%20tai%20Truong%20DHCN%202023.pdf | 2026-08-03 / not-stated | 7,764 | doc_id, title, source_url, retrieved_at, document_version, audience=student, institution=uet, department=ctsv, category=scholarship-policy, language=vi |
 
 **Bước 3 — Thiết kế cấu trúc metadata (metadata schema):** Mỗi tài liệu cần `source_url`, `retrieved_at`, `document_version` và ít nhất 2 trường hữu ích cho việc truy xuất (ví dụ: `audience`, `department`, `category`, `language`, `difficulty`).
 
@@ -130,11 +130,11 @@ Mỗi nhóm viết **đúng 5 câu hỏi đánh giá** kèm theo **câu trả l�
 
 | # | Câu hỏi (Query) | Câu trả lời chuẩn (Gold Answer) | Chunk nào chứa thông tin? |
 |---|-------|-------------------------------|--------------------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
+| 1 | Danh hiệu "Tập thể Tiên tiến" yêu cầu tối thiểu bao nhiêu phần trăm sinh viên đạt kết quả học tập và rèn luyện loại Khá trở lên? | **70%** sinh viên đạt loại Khá trở lên; không có sinh viên xếp loại Yếu trở xuống (trừ ngoại lệ trong quy định). | `thi-dua-khen-thuong-uet-2023`, Điều 8 |
+| 2 | Điều kiện để sinh viên đạt danh hiệu "Sinh viên Xuất sắc" tại UET là gì? | Học tập và rèn luyện loại **Xuất sắc**, không có học phần nào dưới **C+**. | `thi-dua-khen-thuong-uet-2023`, Điều 4 |
+| 3 | Sinh viên HUST phúc tra/khiếu nại điểm học phần trong thời hạn bao lâu? | **7 ngày** kể từ khi điểm được cập nhật; trừ thi vấn đáp hoặc đánh giá trước hội đồng. | `quy-che-dao-tao-dai-hoc-hust`, Điều 6.4 |
+| 4 | Kể tên các danh hiệu thi đua, khen thưởng dành cho sinh viên UET. | 7 danh hiệu: từ Thủ khoa ngành học đến Tập thể Xuất sắc. | `thi-dua-khen-thuong-uet-2023`, Điều 3–9 |
+| 5 | Quy định NCKH, trao đổi học thuật và công nhận tín chỉ áp dụng cho đối tượng nào? *(cần `metadata_filter={"audience": "student"}`)* | Sinh viên CTĐT Tài năng (**ELITECH**) HUST. | `quy-che-dao-tao-dai-hoc-hust`, Điều 2.5 |
 
 **Yêu cầu:**
 - Câu hỏi phải đa dạng (không hỏi 5 câu có nội dung/cấu trúc giống hệt nhau)
@@ -183,7 +183,7 @@ Tìm ít nhất **1 trường hợp lỗi (failure case)** trong quá trình so 
 
 ## Danh Sách Kiểm Tra Nộp Bài (Submission Checklist)
 
-- [ ] Vượt qua tất cả các bài kiểm thử (tests): `pytest tests/ -v`
-- [ ] Cập nhật thư mục `src/` (cá nhân)
-- [ ] Hoàn thành báo cáo nhóm (`report/REPORT_NHOM.md` — 1 file/nhóm)
-- [ ] Hoàn thành báo cáo cá nhân (`report/REPORT_CANHAN.md` — 1 file/sinh viên)
+- [x] Vượt qua tất cả các bài kiểm thử (tests): `pytest tests/ -v` — **42/42 passed**
+- [x] Cập nhật thư mục `src/` (cá nhân)
+- [x] Hoàn thành báo cáo nhóm (`report/REPORT_NHOM.md` — 1 file/nhóm)
+- [x] Hoàn thành báo cáo cá nhân (`report/REPORT_CANHAN.md` — 1 file/sinh viên)
