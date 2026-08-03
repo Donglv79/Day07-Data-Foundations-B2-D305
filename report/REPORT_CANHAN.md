@@ -1,8 +1,8 @@
 # Báo Cáo Cá Nhân - Lab 7: Embedding & Vector Store
 
-**Họ tên:** [Tên sinh viên]
-**Nhóm:** [Tên nhóm]
-**Ngày:** [Ngày nộp]
+**Họ tên:** Đào Đức Mạnh
+**Nhóm:** B2
+**Ngày:** 03/08/2026
 
 > Nộp 1 bản / sinh viên. Phần nhóm nộp chung trong `REPORT_NHOM.md`.
 
