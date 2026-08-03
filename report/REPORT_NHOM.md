@@ -17,39 +17,37 @@
 **Chủ đề (cố định theo lớp K3):** Dịch vụ / quy định đại học (đăng ký môn, học phí, học bổng, thư viện, ký túc xá…).
 
 **Phạm vi cụ thể nhóm tập trung:**
-> Học vụ (đăng ký học phần, thi & điểm, quy chế đào tạo đại học) + dịch vụ thư viện (giờ mở, mượn/gia hạn/trả, phạt, mượn thiết bị, phòng học nhóm) — nguồn công khai của VinUniversity (registrar.vinuni.edu.vn, library.vinuni.edu.vn, policy.vinuni.edu.vn).
+> Quy chế đào tạo đại học + chính sách học vụ (định hướng NCKH, quy chế đào tạo, thi đua khen thưởng) của Đại học Bách khoa Hà Nội (HUST) và Đại học Công nghệ – ĐHQGHN (UET) — nguồn công khai (văn bản PDF hợp lệ, đã chuyển sang Markdown).
 
 ### Danh sách tài liệu (Data Inventory)
 
 | # | Tên tài liệu | Nguồn (Source URL) | Ngày lấy / Phiên bản | Số ký tự | Metadata đã gán |
 |---|--------------|------------|--------------------|----------|-----------------|
-| 1 | Library Access & Services Policy | https://policy.vinuni.edu.vn/all-policies/library-policies-for-users/ | 2026-08-03 / POL-LLR-001-V4.0 | 8,444 | doc_id, title, source_url, retrieved_at, document_version, audience=all, department=library, category=library-policy, language=en |
-| 2 | Circulation – mượn/gia hạn/trả | https://library.vinuni.edu.vn/borrow-renew-return/ | 2026-08-03 / not-stated | 2,832 | doc_id, title, source_url, retrieved_at, document_version, audience=all, department=library, category=circulation, language=en |
-| 3 | Library Borrowing Privilege | https://library.vinuni.edu.vn/borrowing-priviledge/ | 2026-08-03 / not-stated | 2,555 | doc_id, title, source_url, retrieved_at, document_version, audience=all, department=library, category=borrowing-policy, language=en |
-| 4 | Library Hours and Access | https://library.vinuni.edu.vn/about-us/hours-and-access/ | 2026-08-03 / not-stated | 1,087 | doc_id, title, source_url, retrieved_at, document_version, audience=all, department=library, category=access-policy, language=en |
-| 5 | Library services cho graduate/faculty | https://library.vinuni.edu.vn/services/borrow-and-request/graduate-faculty-and-instructors/ | 2026-08-03 / not-stated | 8,276 | doc_id, title, source_url, retrieved_at, document_version, audience=faculty, department=library, category=borrowing-policy, language=en |
-| 6 | Class Schedule & Course Registration | https://registrar.vinuni.edu.vn/academics/class-schedule-course-registration/ | 2026-08-03 / not-stated | 3,559 | doc_id, title, source_url, retrieved_at, document_version, audience=student, department=academic-affairs, category=course-registration, language=en |
-| 7 | Exams & Grades | https://registrar.vinuni.edu.vn/academics/exams-grades/ | 2026-08-03 / not-stated | 1,613 | doc_id, title, source_url, retrieved_at, document_version, audience=student, department=academic-affairs, category=grading, language=en |
-| 8 | Academic Regulations (Undergrad) | https://policy.vinuni.edu.vn/all-policies/academic-regulations-for-full-time-undergraduate-programs/ | 2026-08-03 / VU_HT03 | 71,180 | doc_id, title, source_url, retrieved_at, document_version, audience=student, department=academic-affairs, category=academic-regulations, language=en |
+| 1 | Định hướng nghiên cứu khoa học | https://cdnportal.vnu.edu.vn/data/upload/2022/02/30316/Signed_Signed_286.pdf | 2026-08-03 / not-stated | 14,249 | doc_id, title, source_url, retrieved_at, document_version, audience=teacher, institution=uet, department=nckh, category=nckh-policy, language=vi |
+| 2 | Quy chế đào tạo đại học HUST (QCDT 2025) | https://ctt.hust.edu.vn/Upload/Nguyễn Quốc Đạt/files/DTDH_QDQC/Hoctap/QCDT_2025_5445_QD-DHBK.pdf | 2026-08-03 / not-stated | 78,453 | doc_id, title, source_url, retrieved_at, document_version, audience=student, institution=hust, department=ctsv, category=ctsv-policy, language=vi |
+| 3 | Quy chế đào tạo đại học UET (QĐ 66) | https://cdnportal.vnu.edu.vn/data/upload/vanban/2014/12/29/Final_QC-dH-_2014_Ban-hanh-25-12-2014.pdf | 2026-08-03 / not-stated | 76,809 | doc_id, title, source_url, retrieved_at, document_version, audience=student, institution=uet, department=ctsv, category=ctsv-policy, language=vi |
+| 4 | Quy định chuẩn đầu ra ngoại ngữ (từ K70) | https://ctt.hust.edu.vn/Upload/Nguyễn Quốc Đạt/files/DTDH_QDQC/Hoctap/06_%20Quy%20định%20ngoại%20ngữ%20từ%20K70_chính%20quy_final.pdf | 2026-08-03 / not-stated | 29,358 | doc_id, title, source_url, retrieved_at, document_version, audience=student, institution=hust, department=ctsv, category=ctsv-policy, language=vi |
+| 5 | Quy định khen thưởng UET 2023 | https://handbook.uet.vnu.edu.vn/Quy%20dinh%20khen%20thuong%20tai%20Truong%20DHCN%202023.pdf | 2026-08-03 / not-stated | 7,764 | doc_id, title, source_url, retrieved_at, document_version, audience=student, institution=uet, department=ctsv, category=scholarship-policy, language=vi |
 
 **Danh sách kiểm tra quản trị dữ liệu (Data governance checklist):**
 - [x] Tập tài liệu (Corpus) chỉ chứa nguồn công khai/được phép dùng và không chứa dữ liệu cá nhân, thông tin đăng nhập hoặc tài liệu nội bộ.
 - [x] Mỗi tài liệu có `source_url`, `retrieved_at`, `document_version` (hoặc `not-stated`) trong metadata.
-- [x] `data/university-academic-library-services/sources.csv` khớp một-một với 8 file `.md`; đã chạy CHECKPOINT 2: 8/8 file OK, `csv: khop`, `audience` phân bố {all: 4, faculty: 1, student: 3}.
+- [x] `data/university_services_retrieval/sources.csv` khớp một-một với 5 file `.md`; đã chạy CHECKPOINT 2: 5/5 file OK, `csv: khop`, `audience` phân bố {student: 4, teacher: 1}.
 
 ### Cấu trúc Metadata (Metadata Schema)
 
 | Trường metadata | Kiểu | Ví dụ giá trị | Tại sao hữu ích cho truy xuất (retrieval)? |
 |----------------|------|---------------|-------------------------------|
-| `doc_id` | string | `library-access-policy` | Định danh duy nhất, dùng cho `delete_document()` và lọc theo tài liệu |
-| `title` | string | `Library Access and Services Policy` | Hiển thị + truy vết nguồn câu trả lời |
-| `source_url` | string | `https://policy.vinuni.edu.vn/...` | Truy vết (provenance) câu trả lời về nguồn gốc |
+| `doc_id` | string | `quy-che-dao-tao-dai-hoc-uet-66` | Định danh duy nhất, dùng cho `delete_document()` và lọc theo tài liệu |
+| `title` | string | `QuyCheDaoTaoDaiHocUET66` | Hiển thị + truy vết nguồn câu trả lời |
+| `source_url` | string | `https://uet.vnu.edu.vn/...` | Truy vết (provenance) câu trả lời về nguồn gốc |
 | `retrieved_at` | date | `2026-08-03` | Kiểm tra độ mới của dữ liệu |
-| `document_version` | string | `POL-LLR-001-V4.0` / `not-stated` | Truy vết phiên bản/ngày hiệu lực |
-| `audience` | string | `student` / `faculty` / `all` | **Trường lọc chính** cho `search_with_filter()` (yêu cầu K3) |
-| `department` | string | `library` / `academic-affairs` | Lọc theo bộ phận phụ trách (query mượn thư viện vs. học vụ) |
-| `category` | string | `library-policy` / `course-registration` | Nhóm chủ đề con, tăng độ chính xác khi lọc |
-| `language` | string | `en` | Phân biệt ngôn ngữ nếu mở rộng corpus đa ngữ |
+| `document_version` | string | `not-stated` | Truy vết phiên bản/ngày hiệu lực |
+| `audience` | string | `student` / `teacher` | **Trường lọc chính** cho `search_with_filter()` (yêu cầu K3) |
+| `institution` | string | `hust` / `uet` | Phân biệt tài liệu giữa 2 trường, lọc theo cơ sở đào tạo |
+| `department` | string | `ctsv` / `nckh` | Lọc theo phòng ban/đơn vị phụ trách |
+| `category` | string | `ctsv-policy` / `nckh-policy` / `scholarship-policy` | Nhóm chủ đề con, tăng độ chính xác khi lọc |
+| `language` | string | `vi` | Ngôn ngữ corpus (tiếng Việt) |
 
 ---
 
@@ -59,24 +57,33 @@
 
 ### Phân tích đường cơ sở (Baseline Analysis)
 
-Chạy `ChunkingStrategyComparator().compare()` trên 2-3 tài liệu:
+Chạy `ChunkingStrategyComparator().compare()` trên 2-3 tài liệu (đã bỏ YAML front matter, `chunk_size=500`):
 
 | Tài liệu | Chiến lược (Strategy) | Số lượng Chunk | Độ dài trung bình | Giữ được ngữ cảnh không? |
 |-----------|----------|-------------|------------|-------------------|
-| | FixedSizeChunker (`fixed_size`) | | | |
-| | SentenceChunker (`by_sentences`) | | | |
-| | RecursiveChunker (`recursive`) | | | |
+| quy-che-dao-tao-dai-hoc-hust (78,453 ký tự) | FixedSizeChunker (`fixed_size`) | 175 | 498.0 | Chunk dài đều nhưng có thể cắt giữa ý/mục |
+| quy-che-dao-tao-dai-hoc-hust | SentenceChunker (`by_sentences`) | 244 | 319.4 | Mạch lạc theo câu nhưng số chunk cao, vỡ cấu trúc điều khoản |
+| quy-che-dao-tao-dai-hoc-hust | RecursiveChunker (`recursive`) | 214 | 364.3 | Cân bằng: ưu tiên theo đoạn/mục, câu là dự phòng |
+| quy-che-dao-tao-dai-hoc-uet-66 (76,809 ký tự) | FixedSizeChunker (`fixed_size`) | 171 | 498.9 | Như trên |
+| quy-che-dao-tao-dai-hoc-uet-66 | SentenceChunker (`by_sentences`) | 205 | 372.4 | Như trên |
+| quy-che-dao-tao-dai-hoc-uet-66 | RecursiveChunker (`recursive`) | 231 | 330.1 | Như trên |
+| thi-dua-khen-thuong-uet-2023 (7,764 ký tự) | FixedSizeChunker (`fixed_size`) | 18 | 478.6 | Như trên |
+| thi-dua-khen-thuong-uet-2023 | SentenceChunker (`by_sentences`) | 10 | 773.3 | Chunk rất dài do mỗi điều là 1 câu dài → tràn ngưỡng |
+| thi-dua-khen-thuong-uet-2023 | RecursiveChunker (`recursive`) | 23 | 335.4 | Như trên |
+
+> Nhận xét baseline: văn bản quy định được biên soạn theo điều/mục (mỗi điều là một đơn vị ngữ nghĩa). `SentenceChunker` với `max_sentences=3` bó các điều dài thành chunk quá lớn (thi-dua avg 773 ký tự) vì mỗi điều thường là 1–2 câu rất dài; `RecursiveChunker` giữ ranh giới tự nhiên tốt hơn.
 
 ### Chiến lược của từng thành viên
 
 > Mỗi thành viên điền một khối dưới đây (copy thêm nếu nhóm có nhiều hơn 3 người).
 
 **Thành viên 1 — [Tên]**
-- **Loại chiến lược:** [FixedSize / Sentence / Recursive / custom]
+- **Loại chiến lược:** RecursiveChunker, `chunk_size=400` (baseline: `500`)
 - **Mô tả & lý do chọn cho chủ đề này:** *(2-3 câu)*
 - **Code snippet (nếu custom):**
 ```python
-# Dán mã nguồn (implementation) vào đây
+from src.chunking import RecursiveChunker
+chunker = RecursiveChunker(chunk_size=400)
 ```
 
 **Thành viên 2 — [Tên]**
@@ -110,11 +117,11 @@ Chạy `ChunkingStrategyComparator().compare()` trên 2-3 tài liệu:
 
 | # | Câu hỏi (Query) | Câu trả lời chuẩn (Gold Answer) | Chunk nào chứa thông tin? |
 |---|-------|-------------------------------|--------------------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
+| 1 | Danh hiệu "Tập thể Tiên tiến" yêu cầu tối thiểu bao nhiêu phần trăm sinh viên đạt kết quả học tập và rèn luyện loại Khá trở lên? *(số liệu)* | Có **70%** sinh viên đạt kết quả học tập và rèn luyện loại Khá trở lên; không có sinh viên xếp loại Yếu trở xuống (không tính sinh viên đã tự ý nghỉ/bỏ học hoặc thuộc diện không tương tác). | `thi-dua-khen-thuong-uet-2023`, Điều 8 |
+| 2 | Điều kiện để sinh viên đạt danh hiệu "Sinh viên Xuất sắc" tại Trường Đại học Công nghệ là gì? *(điều kiện)* | Kết quả học tập và rèn luyện trong năm học/toàn khóa đạt loại **Xuất sắc** và **không có học phần nào có điểm dưới C+**; được tặng Giấy khen của Hiệu trưởng + tiền thưởng theo quy định. | `thi-dua-khen-thuong-uet-2023`, Điều 4 |
+| 3 | Sinh viên Đại học Bách khoa Hà Nội phúc tra hoặc khiếu nại điểm học phần trong thời hạn bao lâu? *(quy trình)* | Được đề nghị phúc tra/khiếu nại điểm trong thời hạn **7 ngày** kể từ khi điểm được cập nhật vào tài khoản học tập. **Ngoại lệ:** không áp dụng với học phần thi theo hình thức vấn đáp hoặc đánh giá trước hội đồng. | `quy-che-dao-tao-dai-hoc-hust`, Điều 6.4 |
+| 4 | Kể tên các danh hiệu thi đua, khen thưởng dành cho sinh viên tại Trường Đại học Công nghệ. *(liệt kê)* | 7 danh hiệu: Thủ khoa ngành học; Sinh viên Xuất sắc; Sinh viên Giỏi; Sinh viên có đóng góp cho công tác tập thể; Sinh viên bảo vệ khóa luận/đồ án tốt nghiệp Xuất sắc; Tập thể Tiên tiến; Tập thể Xuất sắc. | `thi-dua-khen-thuong-uet-2023`, Điều 3–9 |
+| 5 | Quy định tạo điều kiện tham gia hoạt động nghiên cứu khoa học, trao đổi học thuật và công nhận tín chỉ áp dụng cho đối tượng nào? *(ngoại lệ + BẮT BUỘC lọc đối tượng)* | Áp dụng cho **sinh viên thuộc các CTĐT Tài năng** (nhóm ELITECH) của ĐHBK Hà Nội: được tạo điều kiện tham gia hoạt động NCKH, trao đổi học thuật, công nhận tín chỉ đã tích lũy từ cơ sở đào tạo đối tác. Cần `metadata_filter={"audience": "student"}` để loại doc `dinh-huong-nghien-cuu-khoa-hoc` (audience=teacher) vốn chứa nhiều từ khóa "nghiên cứu khoa học". | `quy-che-dao-tao-dai-hoc-hust`, Điều 2.5 |
 
 ### Tổng hợp chất lượng truy xuất của nhóm
 
