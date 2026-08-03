@@ -19,6 +19,11 @@ from src.embeddings import (
 
 # Thư mục dữ liệu mặc định cho demo = bộ khởi động cố định của lớp K3.
 # Đổi bằng biến môi trường: LAB_DATA_DIR=data/<thu-muc-cua-nhom> python3 main.py
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8")
+
 DEFAULT_DATA_DIR = "data/university-academic-library-services"
 
 
