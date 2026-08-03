@@ -43,6 +43,7 @@ def parse_front_matter(text: str) -> tuple[dict, str]:
     Nếu có `pyyaml` thì dùng cho chắc chắn; nếu không, dùng parser tối giản.
     Trả về ``({}, text)`` khi không có front matter.
     """
+    text = text.lstrip("\ufeff")  # accept UTF-8 files saved with a byte-order mark
     if not text.startswith("---"):
         return {}, text
 
