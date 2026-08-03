@@ -108,16 +108,16 @@ Chạy **5 câu hỏi đánh giá của nhóm** trên mã nguồn cá nhân củ
 
 | # | Câu hỏi (Query) | Top-1 Chunk truy xuất được (tóm tắt) | Điểm Score | Có liên quan không? (Relevant) | Câu trả lời của Agent (tóm tắt) |
 |---|-------|--------------------------------|-------|-----------|------------------------|
-| 1 | Chờ 5 benchmark query đã thống nhất của nhóm | — | — | — | — |
-| 2 | Chờ 5 benchmark query đã thống nhất của nhóm | — | — | — | — |
-| 3 | Chờ 5 benchmark query đã thống nhất của nhóm | — | — | — | — |
-| 4 | Chờ 5 benchmark query đã thống nhất của nhóm | — | — | — | — |
-| 5 | Chờ 5 benchmark query đã thống nhất của nhóm | — | — | — | — |
+| 1 | Điều kiện 70% cho danh hiệu Tập thể Tiên tiến là gì? | `thi-dua-khen-thuong-uet-2023`, chunk 12; context thuộc phần danh hiệu/khen thưởng. | 0.7603 | Có trong Top-3 | Chưa cấu hình LLM sinh đáp án; evidence gold có trong context Top-3. |
+| 2 | Điều kiện đạt danh hiệu Sinh viên Xuất sắc tại UET là gì? | `thi-dua-khen-thuong-uet-2023`, chunk 14; context về danh hiệu Tập thể Tiên tiến, gold evidence xuất hiện ở chunk 9 trong Top-3. | 0.8217 | Có trong Top-3, không ở Top-1 | Chưa cấu hình LLM sinh đáp án; context Top-3 chứa Điều 4. |
+| 3 | Thời hạn phúc tra/khiếu nại điểm học phần tại HUST là bao lâu? | `quy-che-dao-tao-dai-hoc-hust`, chunk 50; có Điều 6.4 về phúc tra/khiếu nại. | 0.7684 | Có, Top-1 | Chưa cấu hình LLM sinh đáp án; context Top-1 có evidence 7 ngày và ngoại lệ. |
+| 4 | Kể tên các danh hiệu thi đua, khen thưởng tại UET. | `thi-dua-khen-thuong-uet-2023`, chunk 15; nói về khen thưởng tuyển sinh, không liệt kê đủ 7 danh hiệu. | 0.7816 | Không | Context chưa đủ để trả lời danh sách 7 danh hiệu. |
+| 5 | Đối tượng được tạo điều kiện NCKH, trao đổi học thuật và công nhận tín chỉ là ai? | Không filter và filter `audience=student` đều trả `quy-che-dao-tao-dai-hoc-uet-66`, chunk 1; không chứa đáp án ELITECH/HUST. | 0.6664 | Không | Context không đủ; A/B filter chưa cải thiện retrieval. |
 
-**Bao nhiêu câu hỏi trả về chunk có liên quan trong top-3?** Chưa đánh giá — cần bộ dữ liệu và 5 câu hỏi chung của nhóm.
+**Bao nhiêu câu hỏi trả về chunk có liên quan trong top-3?** 3 / 5. Q1, Q2 và Q3 có evidence gold; Q4 và Q5 không có evidence gold trong Top-3.
 
 **Điều hay nhất tôi học được từ thành viên khác / nhóm khác (qua demo):**
-> Chưa có kết quả demo nhóm để ghi nhận. Sau khi so sánh, cần bổ sung một nhận xét cụ thể về ảnh hưởng của chunking, metadata hoặc embedding backend tới một truy vấn thực tế.
+> Local multilingual embedding cho kết quả tốt hơn rõ rệt so với mock, nhưng score cao không bảo đảm chunk chứa đáp án. Ở Q4, đúng tài liệu được truy xuất nhưng sai section; ở Q5, metadata filter `audience=student` không thay đổi Top-3, cho thấy query hoặc schema metadata cần được điều chỉnh để filter thực sự hữu ích.
 
 ---
 
@@ -129,5 +129,5 @@ Chạy **5 câu hỏi đánh giá của nhóm** trên mã nguồn cá nhân củ
 | Hướng tiếp cận của tôi (My Approach) | 10 / 10 |
 | Hoàn thiện code (Core Implementation — tests) | 30 / 30 |
 | Dự đoán độ tương tự (Similarity Predictions) | 5 / 5 |
-| Kết quả truy xuất của tôi (Competition Results) | Chưa chấm / 10 |
-| **Tổng phần cá nhân hiện có** | **50 / 50 (chưa gồm phần nhóm phụ thuộc)** |
+| Kết quả truy xuất của tôi (Competition Results) | 5 / 10 (tự đánh giá theo evidence Top-3) |
+| **Tổng phần cá nhân hiện có** | **55 / 60** |
