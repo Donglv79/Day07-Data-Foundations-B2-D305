@@ -1,7 +1,7 @@
 # Báo Cáo Cá Nhân — Lab 7: Embedding & Vector Store
 
-**Họ tên:** [Điền họ tên]
-**Nhóm:** [Điền tên nhóm]
+**Họ tên:** [Trần Văn Dũng]
+**Nhóm:** [B2]
 **Ngày:** 03/08/2026
 
 **Embedding đã dùng:** `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2` trong `.venv`, vector 384 chiều. Không dùng MockEmbedder trong các bảng similarity và retrieval dưới đây.
