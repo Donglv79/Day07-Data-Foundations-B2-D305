@@ -23,28 +23,39 @@
 **Chủ đề (cố định theo lớp K3):** Dịch vụ / quy định đại học (đăng ký môn, học phí, học bổng, thư viện, ký túc xá…).
 
 **Phạm vi cụ thể nhóm tập trung:**
-> *1 câu — ví dụ: thư viện + đăng ký môn học.*
+> Học vụ (đăng ký học phần, thi & điểm, quy chế đào tạo đại học) + dịch vụ thư viện (giờ mở, mượn/gia hạn/trả, phạt, mượn thiết bị, phòng học nhóm) — nguồn công khai của VinUniversity (registrar.vinuni.edu.vn, library.vinuni.edu.vn, policy.vinuni.edu.vn).
 
 ### Danh sách tài liệu (Data Inventory)
 
 | # | Tên tài liệu | Nguồn (Source URL) | Ngày lấy / Phiên bản | Số ký tự | Metadata đã gán |
 |---|--------------|------------|--------------------|----------|-----------------|
-| 1 | | | | | |
-| 2 | | | | | |
-| 3 | | | | | |
-| 4 | | | | | |
-| 5 | | | | | |
+| 1 | Library Access & Services Policy | https://policy.vinuni.edu.vn/all-policies/library-policies-for-users/ | 2026-08-03 / POL-LLR-001-V4.0 | 8,444 | doc_id, title, source_url, retrieved_at, document_version, audience=all, department=library, category=library-policy, language=en |
+| 2 | Circulation – mượn/gia hạn/trả | https://library.vinuni.edu.vn/borrow-renew-return/ | 2026-08-03 / not-stated | 2,832 | doc_id, title, source_url, retrieved_at, document_version, audience=all, department=library, category=circulation, language=en |
+| 3 | Library Borrowing Privilege | https://library.vinuni.edu.vn/borrowing-priviledge/ | 2026-08-03 / not-stated | 2,555 | doc_id, title, source_url, retrieved_at, document_version, audience=all, department=library, category=borrowing-policy, language=en |
+| 4 | Library Hours and Access | https://library.vinuni.edu.vn/about-us/hours-and-access/ | 2026-08-03 / not-stated | 1,087 | doc_id, title, source_url, retrieved_at, document_version, audience=all, department=library, category=access-policy, language=en |
+| 5 | Library services cho graduate/faculty | https://library.vinuni.edu.vn/services/borrow-and-request/graduate-faculty-and-instructors/ | 2026-08-03 / not-stated | 8,276 | doc_id, title, source_url, retrieved_at, document_version, audience=faculty, department=library, category=borrowing-policy, language=en |
+| 6 | Class Schedule & Course Registration | https://registrar.vinuni.edu.vn/academics/class-schedule-course-registration/ | 2026-08-03 / not-stated | 3,559 | doc_id, title, source_url, retrieved_at, document_version, audience=student, department=academic-affairs, category=course-registration, language=en |
+| 7 | Exams & Grades | https://registrar.vinuni.edu.vn/academics/exams-grades/ | 2026-08-03 / not-stated | 1,613 | doc_id, title, source_url, retrieved_at, document_version, audience=student, department=academic-affairs, category=grading, language=en |
+| 8 | Academic Regulations (Undergrad) | https://policy.vinuni.edu.vn/all-policies/academic-regulations-for-full-time-undergraduate-programs/ | 2026-08-03 / VU_HT03 | 71,180 | doc_id, title, source_url, retrieved_at, document_version, audience=student, department=academic-affairs, category=academic-regulations, language=en |
 
 **Danh sách kiểm tra quản trị dữ liệu (Data governance checklist):**
-- [ ] Tập tài liệu (Corpus) chỉ chứa nguồn công khai/được phép dùng và không chứa dữ liệu cá nhân, thông tin đăng nhập hoặc tài liệu nội bộ.
-- [ ] Mỗi tài liệu có `source_url`, `retrieved_at`, `document_version` (hoặc ngày hiệu lực) trong metadata.
+- [x] Tập tài liệu (Corpus) chỉ chứa nguồn công khai/được phép dùng và không chứa dữ liệu cá nhân, thông tin đăng nhập hoặc tài liệu nội bộ.
+- [x] Mỗi tài liệu có `source_url`, `retrieved_at`, `document_version` (hoặc `not-stated`) trong metadata.
+- [x] `data/university-academic-library-services/sources.csv` khớp một-một với 8 file `.md`; đã chạy CHECKPOINT 2: 8/8 file OK, `csv: khop`, `audience` phân bố {all: 4, faculty: 1, student: 3}.
 
 ### Cấu trúc Metadata (Metadata Schema)
 
 | Trường metadata | Kiểu | Ví dụ giá trị | Tại sao hữu ích cho truy xuất (retrieval)? |
 |----------------|------|---------------|-------------------------------|
-| | | | |
-| | | | |
+| `doc_id` | string | `library-access-policy` | Định danh duy nhất, dùng cho `delete_document()` và lọc theo tài liệu |
+| `title` | string | `Library Access and Services Policy` | Hiển thị + truy vết nguồn câu trả lời |
+| `source_url` | string | `https://policy.vinuni.edu.vn/...` | Truy vết (provenance) câu trả lời về nguồn gốc |
+| `retrieved_at` | date | `2026-08-03` | Kiểm tra độ mới của dữ liệu |
+| `document_version` | string | `POL-LLR-001-V4.0` / `not-stated` | Truy vết phiên bản/ngày hiệu lực |
+| `audience` | string | `student` / `faculty` / `all` | **Trường lọc chính** cho `search_with_filter()` (yêu cầu K3) |
+| `department` | string | `library` / `academic-affairs` | Lọc theo bộ phận phụ trách (query mượn thư viện vs. học vụ) |
+| `category` | string | `library-policy` / `course-registration` | Nhóm chủ đề con, tăng độ chính xác khi lọc |
+| `language` | string | `en` | Phân biệt ngôn ngữ nếu mở rộng corpus đa ngữ |
 
 ---
 
